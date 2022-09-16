@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "YOwvwO5z4JyJ0EJYjVEdE0hYe8mP9QyT17pnzL6YCtfnCOY2a/nYHJKtS4NJt6mnf4wT0GRXXLO4Y92MJyBgdQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\newforce\\workspace\\csharp\\GuessingGame\\GuessingGame.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\newforce\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.17\\microsoft.netcore.app.host.win-x64.5.0.17.nupkg.sha512"
+  ],
+  "logs": []
+}
