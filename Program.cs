@@ -7,22 +7,21 @@ namespace GuessingGame
         static void Main(string[] args)
         {
             ComputerAsks("Guess today's secret number!");
-            
         }
 
         
         static void ComputerAsks(string question)
         {
             // int SecretNumber = 42;
-            int SecretNumber = new Random().Next(1, 100);
-            
+            // int SecretNumber = new Random().Next(1, 100);
+            int SecretNumber = 42;
             int guessCount;
             int iCounter;
 
                         
             Console.Write($"{question}(between 1-100)");
             Console.WriteLine("");
-            Console.WriteLine($"Choose your difficulty; Easy, Medium, Hard or Cheater?");
+            Console.WriteLine($"Choose your difficulty; Easy, Medium, Hard or Cheater...");
             
             string difficulty = Console.ReadLine();
             if(difficulty == "Easy")
@@ -59,36 +58,20 @@ namespace GuessingGame
                     Console.WriteLine($"Success!");
                     break;
                 }
-                else
-                {
+            
+                
                     // Console.WriteLine($"I'm sorry, that is not the Secret Number!");
                     // Console.WriteLine($"Your guess({IntAnswer}) You have {count} guesses left"); //display the users answer, let them know how many guesses are left
-                    if(SecretNumber < IntAnswer)
+            else if(SecretNumber > IntAnswer)
                         {
                            Console.WriteLine($"Your guess is too low!  You have {guessCount} guesses left."); 
                         }
-                    else
+            else
                         {
                             Console.WriteLine($"Your guess is too high! You have {guessCount} guesses left.");
                         }
-                }
                 
             }
-                
-
         }
-        
-
-
-        
-        
-        
-
-
-
-
-
-
-
     }
 }
